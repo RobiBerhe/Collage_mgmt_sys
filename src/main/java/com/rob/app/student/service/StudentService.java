@@ -6,6 +6,12 @@ import java.util.List;
 import com.rob.app.student.data.StudentDTO;
 
 public interface StudentService {
+    
     StudentDTO createStudent(StudentDTO student);
+    
     List<StudentDTO> listStudents();
+    
+    StudentDTO getStudentById(Long id);
+    
+    void deleteStudent(Long id);
 }
